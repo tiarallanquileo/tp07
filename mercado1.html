@@ -1,15 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+        background-color: #A98467;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        /* Podés visitar: https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Flexbox#el_modelo_flexible para entender el modelo Flexbox */
+        display: flex;
+        /* Establece el contenedor como un contenedor flex */
+        flex-wrap: wrap;
+        /* Permite que los elementos se envuelvan en líneas adicionales si no hay suficiente espacio */
+        justify-content: center;
+        /* Centra los elementos a lo largo del eje principal horizontal */
+        align-items: center;
+        /* Centra los elementos a lo largo del eje secundario vertical */
+        background-color:#FEC89A;
+        margin:0 50px;
+        /* Margen a la derecha y a la izquierda. El valor 0 es para el margen superior e inferior */
+
+    }
+
+    header {
+        display: flex;
+        /* Establece el encabezado como un contenedor flex */
+        align-items: baseline;
+        /* Alinea los elementos del encabezado a lo largo de la línea de base */
+        justify-content: space-between;
+        /* Distribuye los elementos del encabezado de manera uniforme a lo largo del eje principal horizontal */
+        padding: 25px;
+    }
+
+    .container-title {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .container-image {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .box {
+        width: 350px;
+        padding: 20px;
+        background-color: #FFB5A7;
+        margin: 10px;
+        text-align: center;
+    }
+    .imagen_perfume{
+      width:100px;
+      height: 180px;
+    }
+    .a{
+      color:#6C584C;
+      font-size: 1.3em;
+      text-decoration: none;
+    }
+</style>
 </head>
+
 <body>
+    <header>
+        <div class="container-image">
+            <img src="sad.png" alt="Imagen de Producto" width="60">
+        </div>
+        <div>
+            <h3 class="container-title">Mucho más que productos</h3>
+        </div>
+    </header>
     <main class="container">
-      <div class="box">
-        <img src="" alt="">
-      </div>
+        <div class="box">
+            <img src="natura.webp" alt="" class="imagen_perfume">
+            <h3>perfume 1</h3>
+            <p>Ekos Maracuyá Frescor</p>
+            <p>$18.711</p>
+            <a href="#" class="a">compra mas aqui</a>
+        </div>
+        <div class="box">
+            <img src="natura2.webp" alt="" class="imagen_perfume">
+            <h3>perfume 2</h3>
+            <p>Frescor Tukumá Ekos Natura - Los Viajes De Marian.</p>
+            <p>$19.465</p>
+            <a href="#" class="a">compra mas aqui</a>
+        </div>
+        <div class="box">
+            <img src="natura3.webp" alt="" class="imagen_perfume">
+            <h3> perfume 3</h3>
+            <p>Frescor Pitanga Preta Ekos Natura - Los Viajes De Marian.</p>
+            <p>$17.968,50</p>
+            <a href="#" class="a">compra mas aqui</a>
+        </div>
+        <div class="box">
+            <img src="natura4.webp" alt="" class="imagen_perfume">
+            <h3>perfume 4</h3>
+            <p>Frescor Acaí Ekos Natura - Los Viajes De Marian.</p>
+            <p>$15.950</p>
+            <a href="#" class="a">compra mas aqui</a>
+        </div>
     </main>
 </body>
-</html>

@@ -1,17 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .encabezado{
-            background: #d60622;
-            BACKGROUND: linear-gradient(90deg,)
+        .encabezado {
+            background: rgb(108, 0, 167);
+            background: linear-gradient(90deg, rgba(108, 0, 167, 1) 0%, rgba(154, 22, 187, 1) 0%, rgba(203, 0, 255, 1) 64%, rgba(51, 15, 121, 1) 87%);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .imagen_logos {
+
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        .letras {
+            display: flex;
+        }
+
+        .img {
+            border: 2px rgb(199, 24, 24) solid;
+            padding: 5px;
+            margin: 10px;
         }
     </style>
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="encabezado">
+            <div class="box">
+                <p>suscribite al nivel 6 por <span>$10.008</span>$ 3.999/mes</p>
+            </div>
+            <div class="suscribite"> <!--suscribite-->
+                <button class="boton">suscribite</button>
+            </div>
+        </div>
+        <div>
+
+            <div class="box2">
+                <p>consegui los mejores beneficios en mercado libre</p>
+            </div>
+            <div class="imagen_logos">
+                <div class="letras">
+                    <img src="disney+.jpg" alt="" class="imagen_logos">
+                    <p>disney+ sin cargo</p>
+                </div>
+                <div class="letras">
+                    <img src="star.jpeg" alt="" class="imagen_logos">
+                    <p> star+ sin cargo</p>
+                </div>
+                <div class="letras">
+                    <img src="truck.png" alt="" class="imagen_logos">
+                    <p>envios gratis y repidos desde $23.000 y 25% OFF en envios de menos $23.000</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 </body>
+
 </html>
